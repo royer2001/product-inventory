@@ -36,11 +36,25 @@ El programa proporciona las siguientes opciones:
    - Permite al usuario actualizar los detalles de un producto existente.
    - Solicita ID del producto y luego actualiza nombre, precio y cantidad después de validaciones.
 
-5. **utils.py**
-   - **generar_clave(diccionario)**: Genera una nueva clave para un producto basada en el tamaño actual del diccionario.
-   - **mostrar_mensaje(opcion)**: Muestra un mensaje de confirmación después de una acción.
-   - **limpiar_pantalla()**: Limpia la pantalla de la consola (requerido `cls` para Windows o `clear` para Unix).
-   - **alerta(mensaje)**: Muestra un mensaje de alerta en caso de entrada inválida o errores.
+### Funciones del Archivo `utils.py`
+  
+1. **limpiar_pantalla()**
+   - Limpia la pantalla de la consola.
+   - Usa `cls` en sistemas Windows y `clear` en sistemas Unix.
+
+2. **generar_clave(diccionario)**
+   - Genera una nueva clave para un producto, basada en la clave máxima existente en el diccionario más uno. Si el diccionario está vacío, retorna 1.
+
+3. **mostrar_mensaje(opcion)**
+   - Muestra un mensaje de confirmación basado en la opción proporcionada:
+     - **1**: Agregado exitosamente (verde).
+     - **2**: Eliminado exitosamente (rojo).
+     - **3**: Actualizado exitosamente (verde).
+     - **4**: Saliendo del programa (magenta).
+   - Si la opción no es válida, muestra "Opción no encontrada".
+
+4. **alerta(mensaje)**
+   - Muestra un mensaje de alerta en color amarillo.
 
 ## Uso
 
