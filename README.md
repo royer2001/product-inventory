@@ -1,4 +1,4 @@
-# Repositorio -> product-inventory
+# Repositorio ---> product-inventory
 
 # Gestión de Productos
 
