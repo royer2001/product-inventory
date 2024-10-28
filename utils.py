@@ -32,5 +32,6 @@ def mostrar_mensaje(opcion):
     mensaje = mensajes.get(opcion, "Opción no encontrada")
     print(f'{mensaje}{RESET}')
 
+# Mostar mensaje solo para errores
 def alerta(mensaje):
     print(f'{YELLOW}{mensaje}{RESET}')
