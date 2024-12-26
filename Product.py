@@ -1,3 +1,5 @@
+
+# Handle errors
 class ProductException(Exception):
     """Handle errors for product"""
     pass

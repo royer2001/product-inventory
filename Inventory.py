@@ -25,14 +25,14 @@ class Inventory:
         return new_product_number
 
     def add_product(self):
-        print('*** Add ***')
+        print('Add'.center(10,'*'))
         product_name = input('Enter name: ')
         product_price = input('Enter price: ')
         product_stock = input('Enter stock: ')
         self.create_product(product_name, product_price, product_stock)
 
     def edit_product(self):
-        print('***Edit***')
+        print('Edit'.center(10,'*'))
         key = input('Enter id to edit: ')
         key = self.validate_key(key)
         name = input('Enter new name: ')
@@ -41,7 +41,7 @@ class Inventory:
         self.products_dict[key] = Product(name, price, stock)
 
     def delete_product(self):
-        print('*** Delete ***')
+        print('Delete'.center(10,'*'))
         key = input('Enter id to delete: ')
         key = self.validate_key(key)
         del self.products_dict[key]
